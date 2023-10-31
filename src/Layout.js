@@ -156,7 +156,7 @@ const Layout = () => {
             <Rounded>Portfolio</Rounded>
           </div>
         </div>
-        <div className="mt-[600px] md:mt-[300px] md:w-[50%] lg:w-[43%]">
+        <div className="mt-[500px] md:mt-[300px] md:w-[50%] lg:w-[43%]">
           <div className={styles.body}>
             <Magnetic>
               <p className="text-white md:text-[24px] text-left cursor-pointer ">

@@ -198,7 +198,7 @@ const Layout = () => {
               Deliverables from some Marketing & growth initiatives, product
               designs and branding development projects that I’ve led.
             </p>
-            <ul className="flex items-center overflow-x-auto pb-4 mb-3 gap-[32px]">
+            <ul className="flex items-center overflow-x-auto py-4 mb-3 gap-[32px]">
               <li>
                 <Magnetic>
                   <button
@@ -293,34 +293,79 @@ const Layout = () => {
               offset={200}
             >
               <div className=" hidden md:grid grid-cols-5 gap-[40px] ">
-                <div className="md:h-[120px] md:w-[120px] lg:h-[180px] lg:w-[180px] xl:h-[218px] xl:w-[218px] rounded-full flex justify-center items-center border border-white text-white">
-                  Armani
+              <div className="group relative flex cursor-pointer ">
+                  <img
+                    src="/armani.png"
+                    alt=""
+                    className="rounded-full border border-gray-500 object-cover md:h-[120px] md:w-[120px] lg:h-[180px] lg:w-[180px] xl:h-[218px] xl:w-[218px] filter group-hover:grayscale transition duration-300 ease-in-out"
+                  />
+                  <div className="absolute opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-white md:h-[120px] md:w-[120px] lg:h-[180px] lg:w-[180px] xl:h-[218px] xl:w-[218px] rounded-full">
+                    <div className="flex items-center  justify-center h-full">
+                    <p className=" md:text-[24px] xl:text-3xl font-bold text-black opacity-100">
+                        Amarni
+                      </p>
+                    </div>
+                  </div>
                 </div>
+
 
                 <div className="group relative flex cursor-pointer ">
                   <img
                     src="/wakanow.png"
                     alt=""
-                    className="rounded-full border border-gray-500 object-cover w-20 h-20 md:h-24 md:w-24 xl:w-32 xl:h-32
-         filter group-hover:grayscale transition duration-300 ease-in-out"
+                    className="rounded-full border border-gray-500 object-cover md:h-[120px] md:w-[120px] lg:h-[180px] lg:w-[180px] xl:h-[218px] xl:w-[218px] filter group-hover:grayscale transition duration-300 ease-in-out"
                   />
-
-                  <div className="absolute opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-white w-20 h-20 md:h-24 md:w-24 xl:w-32 xl:h-32 rounded-full">
+                  <div className="absolute opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-white md:h-[120px] md:w-[120px] lg:h-[180px] lg:w-[180px] xl:h-[218px] xl:w-[218px] rounded-full">
                     <div className="flex items-center  justify-center h-full">
-                      <p className="text-3xl font-bold text-black opacity-100">
+                    <p className=" md:text-[24px] xl:text-3xl font-bold text-black opacity-100">
                         wakanow
                       </p>
                     </div>
                   </div>
                 </div>
-                <div className="md:h-[120px] md:w-[120px] lg:h-[180px] lg:w-[180px] xl:h-[218px] xl:w-[218px] rounded-full flex justify-center items-center border border-white text-white">
-                  Maggi
+                <div className="group relative flex cursor-pointer ">
+                  <img
+                    src="/maggi.png"
+                    alt=""
+                    className="rounded-full border border-gray-500 object-cover md:h-[120px] md:w-[120px] lg:h-[180px] lg:w-[180px] xl:h-[218px] xl:w-[218px] filter group-hover:grayscale transition duration-300 ease-in-out"
+                  />
+                  <div className="absolute opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-white md:h-[120px] md:w-[120px] lg:h-[180px] lg:w-[180px] xl:h-[218px] xl:w-[218px] rounded-full">
+                    <div className="flex items-center  justify-center h-full">
+                    <p className=" md:text-[24px] xl:text-3xl font-bold text-black opacity-100">
+                        Maggi
+                      </p>
+                    </div>
+                  </div>
                 </div>
-                <div className="md:h-[120px] md:w-[120px] lg:h-[180px] lg:w-[180px] xl:h-[218px] xl:w-[218px] rounded-full flex justify-center items-center border border-white text-white">
-                  NdaniTV
+                <div className="group relative flex cursor-pointer ">
+                  <img
+                    src="/ndanitv.png"
+                    alt=""
+                    className="rounded-full border border-gray-500 object-cover md:h-[120px] md:w-[120px] lg:h-[180px] lg:w-[180px] xl:h-[218px] xl:w-[218px] filter group-hover:grayscale transition duration-300 ease-in-out"
+                  />
+                  <div className="absolute opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-white md:h-[120px] md:w-[120px] lg:h-[180px] lg:w-[180px] xl:h-[218px] xl:w-[218px] rounded-full">
+                    <div className="flex items-center  justify-center h-full">
+                    <p className=" md:text-[24px] xl:text-3xl font-bold text-black opacity-100">
+                        Ndani TV
+                      </p>
+                    </div>
+                  </div>
                 </div>
-                <div className="md:h-[120px] md:w-[120px] lg:h-[180px] lg:w-[180px] xl:h-[218px] xl:w-[218px] rounded-full flex justify-center items-center border border-white text-white">
-                  UBA
+
+
+                <div className="group relative flex cursor-pointer ">
+                  <img
+                    src="/uba.png"
+                    alt=""
+                    className="rounded-full border border-gray-500 object-cover md:h-[120px] md:w-[120px] lg:h-[180px] lg:w-[180px] xl:h-[218px] xl:w-[218px] filter group-hover:grayscale transition duration-300 ease-in-out"
+                  />
+                  <div className="absolute opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-white md:h-[120px] md:w-[120px] lg:h-[180px] lg:w-[180px] xl:h-[218px] xl:w-[218px] rounded-full">
+                    <div className="flex items-center  justify-center h-full">
+                      <p className=" md:text-[24px] xl:text-3xl font-bold text-black opacity-100">
+                        UBA
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </ScrollAnimation>
@@ -331,37 +376,137 @@ const Layout = () => {
               duration={1.3}
             >
               <div className=" hidden md:grid grid-cols-5 gap-[40px] mt-[40px] ">
-                <div className="md:h-[120px] md:w-[120px] lg:h-[180px] lg:w-[180px] xl:h-[218px] xl:w-[218px] rounded-full flex justify-center items-center border border-white text-white">
-                  Mavins Records
+               <div className="group relative flex cursor-pointer ">
+                  <img
+                    src="/marvin.jpeg"
+                    alt=""
+                    className="rounded-full border border-gray-500 object-cover md:h-[120px] md:w-[120px] lg:h-[180px] lg:w-[180px] xl:h-[218px] xl:w-[218px] filter group-hover:grayscale transition duration-300 ease-in-out"
+                  />
+                  <div className="absolute opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-white md:h-[120px] md:w-[120px] lg:h-[180px] lg:w-[180px] xl:h-[218px] xl:w-[218px] rounded-full">
+                    <div className="flex items-center  justify-center h-full">
+                      <p className=" md:text-[24px] xl:text-3xl font-bold text-black opacity-100">
+                        Marvin Record
+                      </p>
+                    </div>
+                  </div>
                 </div>
                 <div className="md:h-[120px] md:w-[120px] lg:h-[180px] lg:w-[180px] xl:h-[218px] xl:w-[218px] rounded-full flex justify-center items-center border border-white text-white">
                   Ninie Lagos
                 </div>
 
-                <div className="md:h-[120px] md:w-[120px] lg:h-[180px] lg:w-[180px] xl:h-[218px] xl:w-[218px] rounded-full flex justify-center items-center border border-white text-white">
-                  Essenza
+                <div className="group relative flex cursor-pointer ">
+                  <img
+                    src="/essenza.png"
+                    alt=""
+                    className="rounded-full border border-gray-500 object-cover md:h-[120px] md:w-[120px] lg:h-[180px] lg:w-[180px] xl:h-[218px] xl:w-[218px] filter group-hover:grayscale transition duration-300 ease-in-out"
+                  />
+                  <div className="absolute opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-white md:h-[120px] md:w-[120px] lg:h-[180px] lg:w-[180px] xl:h-[218px] xl:w-[218px] rounded-full">
+                    <div className="flex items-center  justify-center h-full">
+                      <p className=" md:text-[24px] xl:text-3xl font-bold text-black opacity-100">
+                        Essenza
+                      </p>
+                    </div>
+                  </div>
                 </div>
 
-                <div className="md:h-[120px] md:w-[120px] lg:h-[180px] lg:w-[180px] xl:h-[218px] xl:w-[218px] rounded-full flex justify-center items-center border border-white text-white">
-                  Piggyvest
+                <div className="group relative flex cursor-pointer ">
+                  <img
+                    src="/piggyvest.png"
+                    alt=""
+                    className="rounded-full border border-gray-500 object-cover md:h-[120px] md:w-[120px] lg:h-[180px] lg:w-[180px] xl:h-[218px] xl:w-[218px] filter group-hover:grayscale transition duration-300 ease-in-out"
+                  />
+                  <div className="absolute opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-white md:h-[120px] md:w-[120px] lg:h-[180px] lg:w-[180px] xl:h-[218px] xl:w-[218px] rounded-full">
+                    <div className="flex items-center  justify-center h-full">
+                      <p className=" md:text-[24px] xl:text-3xl font-bold text-black opacity-100">
+                        Piggyvest
+                      </p>
+                    </div>
+                  </div>
                 </div>
-                <div className="md:h-[120px] md:w-[120px] lg:h-[180px] lg:w-[180px] xl:h-[218px] xl:w-[218px] rounded-full flex justify-center items-center border border-white text-white">
-                  Infinix
+                <div className="group relative flex cursor-pointer ">
+                  <img
+                    src="/infinix.png"
+                    alt=""
+                    className="rounded-full border border-gray-500 object-cover md:h-[120px] md:w-[120px] lg:h-[180px] lg:w-[180px] xl:h-[218px] xl:w-[218px] filter group-hover:grayscale transition duration-300 ease-in-out"
+                  />
+                  <div className="absolute opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-white md:h-[120px] md:w-[120px] lg:h-[180px] lg:w-[180px] xl:h-[218px] xl:w-[218px] rounded-full">
+                    <div className="flex items-center  justify-center h-full">
+                      <p className=" md:text-[24px] xl:text-3xl font-bold text-black opacity-100">
+                       Infinix
+                      </p>
+                    </div>
+                  </div>
                 </div>
-                <div className="md:h-[120px] md:w-[120px] lg:h-[180px] lg:w-[180px] xl:h-[218px] xl:w-[218px] text-center rounded-full flex justify-center items-center border border-white text-white">
-                  FreshPrep by Eros
+                <div className="group relative flex cursor-pointer ">
+                  <img
+                    src="/freshpep.png"
+                    alt=""
+                    className="rounded-full border border-gray-500 object-cover md:h-[120px] md:w-[120px] lg:h-[180px] lg:w-[180px] xl:h-[218px] xl:w-[218px] filter group-hover:grayscale transition duration-300 ease-in-out"
+                  />
+                  <div className="absolute opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-white md:h-[120px] md:w-[120px] lg:h-[180px] lg:w-[180px] xl:h-[218px] xl:w-[218px] rounded-full">
+                    <div className="flex items-center  justify-center h-full">
+                      <p className=" md:text-[24px] xl:text-3xl font-bold text-black opacity-100">
+                      FreshPrep by Eros
+
+                      </p>
+                    </div>
+                  </div>
                 </div>
-                <div className="md:h-[120px] md:w-[120px] lg:h-[180px] lg:w-[180px] xl:h-[218px] xl:w-[218px] rounded-full flex justify-center items-center border border-white text-white">
-                  Sunlight
+                <div className="group relative flex cursor-pointer ">
+                  <img
+                    src="/sunlight.png"
+                    alt=""
+                    className="rounded-full border border-gray-500 object-cover md:h-[120px] md:w-[120px] lg:h-[180px] lg:w-[180px] xl:h-[218px] xl:w-[218px] filter group-hover:grayscale transition duration-300 ease-in-out"
+                  />
+                  <div className="absolute opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-white md:h-[120px] md:w-[120px] lg:h-[180px] lg:w-[180px] xl:h-[218px] xl:w-[218px] rounded-full">
+                    <div className="flex items-center  justify-center h-full">
+                      <p className=" md:text-[24px] xl:text-3xl font-bold text-black opacity-100">
+                        Sunlight
+                      </p>
+                    </div>
+                  </div>
                 </div>
-                <div className="md:h-[120px] md:w-[120px] lg:h-[180px] lg:w-[180px] xl:h-[218px] xl:w-[218px] rounded-full flex justify-center items-center border border-white text-white">
-                  Newton & David
+                <div className="group relative flex cursor-pointer ">
+                  <img
+                    src="/newton.png"
+                    alt=""
+                    className="rounded-full border border-gray-500 object-cover md:h-[120px] md:w-[120px] lg:h-[180px] lg:w-[180px] xl:h-[218px] xl:w-[218px] filter group-hover:grayscale transition duration-300 ease-in-out"
+                  />
+                  <div className="absolute opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-white md:h-[120px] md:w-[120px] lg:h-[180px] lg:w-[180px] xl:h-[218px] xl:w-[218px] rounded-full">
+                    <div className="flex items-center  justify-center h-full">
+                      <p className=" md:text-[24px] xl:text-3xl font-bold text-black opacity-100">
+                        Newton & David
+                      </p>
+                    </div>
+                  </div>
                 </div>
-                <div className="md:h-[120px] md:w-[120px] lg:h-[180px] lg:w-[180px] xl:h-[218px] xl:w-[218px] rounded-full flex justify-center items-center border border-white text-white">
-                  Ciroc
+                <div className="group relative flex cursor-pointer ">
+                  <img
+                    src="/ciroc.png"
+                    alt=""
+                    className="rounded-full border border-gray-500 object-cover md:h-[120px] md:w-[120px] lg:h-[180px] lg:w-[180px] xl:h-[218px] xl:w-[218px] filter group-hover:grayscale transition duration-300 ease-in-out"
+                  />
+                  <div className="absolute opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-white md:h-[120px] md:w-[120px] lg:h-[180px] lg:w-[180px] xl:h-[218px] xl:w-[218px] rounded-full">
+                    <div className="flex items-center  justify-center h-full">
+                      <p className=" md:text-[24px] xl:text-3xl font-bold text-black opacity-100">
+                       Ciroc
+                      </p>
+                    </div>
+                  </div>
                 </div>
-                <div className="md:h-[120px] md:w-[120px] lg:h-[180px] lg:w-[180px] xl:h-[218px] xl:w-[218px] rounded-full flex justify-center items-center border border-white text-white">
-                  Golden Penny
+                <div className="group relative flex cursor-pointer ">
+                  <img
+                    src="/goldenpenny.jpeg"
+                    alt=""
+                    className="rounded-full border border-gray-500 object-cover md:h-[120px] md:w-[120px] lg:h-[180px] lg:w-[180px] xl:h-[218px] xl:w-[218px] filter group-hover:grayscale transition duration-300 ease-in-out"
+                  />
+                  <div className="absolute opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-white md:h-[120px] md:w-[120px] lg:h-[180px] lg:w-[180px] xl:h-[218px] xl:w-[218px] rounded-full">
+                    <div className="flex items-center  justify-center h-full">
+                      <p className=" md:text-[24px] xl:text-3xl font-bold text-black opacity-100">
+                        Golden Penny
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </ScrollAnimation>
@@ -506,9 +651,9 @@ const Layout = () => {
               >
                 <div className="  text-white max-w-[170px] sm:max-w-[200px]  md:max-w-[435px] rounded-[16px]">
                   <img
-                    src="/brand.png"
+                    src="/branding.jpg"
                     alt="icon"
-                    className="mb-[24px] w-full"
+                    className="mb-[24px] w-full rounded-xl"
                   />
                   <h3 className="text-[19px] md:text-[22px] lg:text-[26px]  font-medium">
                     BRANDING STRATEGY
@@ -521,7 +666,8 @@ const Layout = () => {
                 offset={200}
               >
                 <div className="  text-white max-w-[170px] sm:max-w-[200px]  md:max-w-[435px] rounded-[16px]">
-                  <img src="/design.png" alt="icon" className="mb-[24px]" />
+                  <img src="/design.jpg" alt="icon"                     className="mb-[24px] w-full rounded-xl"
+ />
                   <h3 className="text-[19px] md:text-[22px] lg:text-[26px]  font-medium">
                     PRODUCT DESIGN
                   </h3>
@@ -534,7 +680,8 @@ const Layout = () => {
                 offset={200}
               >
                 <div className="  text-white max-w-[170px] sm:max-w-[200px]  md:max-w-[435px] rounded-[16px]">
-                  <img src="/networking.png" alt="icon" className="mb-[24px]" />
+                  <img src="/networking.jpg" alt="icon"                     className="mb-[24px] w-full rounded-xl"
+/>
                   <h3 className="text-[19px] md:text-[22px] lg:text-[26px]  font-medium">
                     NETWORKING
                   </h3>
@@ -547,7 +694,8 @@ const Layout = () => {
                 offset={200}
               >
                 <div className="  text-white max-w-[170px] sm:max-w-[200px]  md:max-w-[435px] rounded-[16px]">
-                  <img src="/digital.png" alt="icon" className="mb-[24px]" />
+                  <img src="/digital.jpg" alt="icon"                     className="mb-[24px] w-full rounded-xl"
+ />
                   <h3 className="text-[19px] md:text-[22px] lg:text-[26px]  font-medium">
                     DIGITAL MARKETING
                   </h3>
@@ -556,7 +704,8 @@ const Layout = () => {
 
               <ScrollAnimation animateIn="animate__fadeInDown" duration={1}>
                 <div className="  text-white max-w-[170px] sm:max-w-[200px]  md:max-w-[435px] rounded-[16px]">
-                  <img src="/consult.png" alt="icon" className="mb-[24px]" />
+                  <img src="/consult.jpg" alt="icon"                     className="mb-[24px] w-full rounded-xl"
+ />
                   <h3 className="text-[19px] md:text-[22px] lg:text-[26px]  font-medium">
                     BUSINESS CONSULTING
                   </h3>
@@ -565,24 +714,15 @@ const Layout = () => {
 
               <ScrollAnimation animateIn="animate__fadeInLeft" duration={1}>
                 <div className="  text-white max-w-[170px] sm:max-w-[200px]  md:max-w-[435px] rounded-[16px]">
-                  <img src="/consult.png" alt="icon" className="mb-[24px]" />
+                  <img src="/collabo.jpg" alt="icon"                     className="mb-[24px] w-full rounded-xl"
+/>
                   <h3 className="text-[19px] md:text-[22px] lg:text-[26px]  font-medium">
                     BRAND COLLABORATIONS & ENDORSEMENT
                   </h3>
                 </div>
               </ScrollAnimation>
             </div>
-            <button
-              onClick={() => {
-                setContactBox(!contactbox);
-              }}
-              className="btn mt-7 relative inline-flex items-center justify-start overflow-hidden transition-all px-3 py-2 z-20 rounded-[24px] border border-white bg-black text-white to-white via-black from-[#111111] hover:bg-white group"
-            >
-              <span className="w-0 h-0 rounded bg-white absolute top-0 left-0 ease-out duration-500 transition-all group-hover:w-full group-hover:h-full -z-1"></span>
-              <span className="w-full flex items-center text-white transition-colors duration-600 ease-in-out group-hover:text-black z-10">
-                Ready to get in touch? <BsArrowRight />
-              </span>
-            </button>
+            
           </section>
         </div>
       ) : (
@@ -633,7 +773,7 @@ const Layout = () => {
                 <img
                   src="/pics.png"
                   alt="Samuel otigba at the beach"
-                  className="md:h-[500px] lg:h-[603px]"
+                  className="md:h-[500px] lg:h-[603px] object-contain"
                 />
               </div>
             </div>
@@ -1099,8 +1239,20 @@ const Layout = () => {
       )}
       <section
         ref={bottomEl}
-        className="pt-[40px] md:pt-[70px] lg:pt-[104px] px-[16px] md:px-[36px] lg:px-[48px] bg-[#111]"
+        className="py-[40px] md:pt-[70px] lg:pt-[104px] px-[16px] md:px-[36px] lg:px-[48px] bg-[#111]"
       >
+
+      <button
+              onClick={() => {
+                setContactBox(!contactbox);
+              }}
+              className="btn mb-10 relative inline-flex items-center justify-start overflow-hidden transition-all px-3 py-2 z-20 rounded-[24px] border border-white bg-black text-white to-white via-black from-[#111111] hover:bg-white group"
+            >
+              <span className="w-0 h-0 rounded bg-white absolute top-0 left-0 ease-out duration-500 transition-all group-hover:w-full group-hover:h-full -z-1"></span>
+              <span className="w-full flex items-center text-white transition-colors duration-600 ease-in-out group-hover:text-black z-10">
+                Ready to get in touch? <BsArrowRight />
+              </span>
+            </button>
         <div className="flex justify-between text-center">
           <div className="text-white text-[12px]">
             © {new Date().getFullYear()} All Rights Reserved
@@ -1138,14 +1290,14 @@ const Layout = () => {
             delay: 1.5,
             duration: 1.5,
           }}
-          className="absolute bottom-0 w-full z-40 animate__fadeInUp  animate__animated"
+          className="absolute  bottom-0 w-full z-40 animate__fadeInUp  animate__animated"
         >
-          <div className="pt-[40px] relative md:pt-[104px] px-[16px] md:px-[48px] text-[#000] bg-[#FFF] pb-[32px] ">
+          <div className="pt-[40px] rounded-tl-[40px] rounded-tr-[40px] relative md:pt-[104px] px-[16px] md:px-[48px] text-[#000] bg-[#FFF] pb-[32px] ">
             <button
               onClick={() => {
                 setContactBox(!contactbox);
               }}
-              className="absolute right-5 top-7"
+              className="absolute right-5 top-7 px-2 py-1 hover:bg-black hover:text-white rounded-2xl"
             >
               close
             </button>
@@ -1198,7 +1350,7 @@ const Layout = () => {
 
                 <button
                   type="submit"
-                  className="text-black px-3 py-2 border border-[#000] rounded-[24px] mt-[28px]"
+                  className="text-black px-3 py-2 border border-[#000] rounded-[24px] mt-[28px] hover:text-white hover:bg-black"
                 >
                   GET IN TOUCH
                 </button>

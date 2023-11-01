@@ -19,6 +19,14 @@ import emailjs from "@emailjs/browser";
 import Dnd from "./component/Dnd";
 
 const Layout = () => {
+  const [expand1, setExpand1] = useState(false);
+  const [gallery, setGallery] = useState(false);
+  const [more1, setMore1] = useState(false);
+  const [more2, setMore2] = useState(false);
+  const [more3, setMore3] = useState(false);
+  const [more4, setMore4] = useState(false);
+  const [more5, setMore5] = useState(false);
+  const [more6, setMore6] = useState(false);
   const [product, setProduct] = useState("productdesign");
   const [menu, setMenu] = useState("portfolio");
   const [open, setOpen] = useState(false);
@@ -288,8 +296,22 @@ const Layout = () => {
                 <div className="md:h-[120px] md:w-[120px] lg:h-[180px] lg:w-[180px] xl:h-[218px] xl:w-[218px] rounded-full flex justify-center items-center border border-white text-white">
                   Armani
                 </div>
-                <div className="md:h-[120px] md:w-[120px] lg:h-[180px] lg:w-[180px] xl:h-[218px] xl:w-[218px] rounded-full flex justify-center items-center border border-white text-white">
-                  Wakanow
+
+                <div className="group relative flex cursor-pointer ">
+                  <img
+                    src="/wakanow.png"
+                    alt=""
+                    className="rounded-full border border-gray-500 object-cover w-20 h-20 md:h-24 md:w-24 xl:w-32 xl:h-32
+         filter group-hover:grayscale transition duration-300 ease-in-out"
+                  />
+
+                  <div className="absolute opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-white w-20 h-20 md:h-24 md:w-24 xl:w-32 xl:h-32 rounded-full">
+                    <div className="flex items-center  justify-center h-full">
+                      <p className="text-3xl font-bold text-black opacity-100">
+                        wakanow
+                      </p>
+                    </div>
+                  </div>
                 </div>
                 <div className="md:h-[120px] md:w-[120px] lg:h-[180px] lg:w-[180px] xl:h-[218px] xl:w-[218px] rounded-full flex justify-center items-center border border-white text-white">
                   Maggi
@@ -424,7 +446,7 @@ const Layout = () => {
                 WORK WITH ME{" "}
               </h2>
             </Magnetic>
-            <div className="overflow-x-scroll flex md:hidden gap-[16px]  scrollbar-thumb-[#39ff14]  scrollbar-thin  scrollbar-track-white pb-[32px] ">
+            {/* <div className="overflow-x-scroll flex md:hidden gap-[16px]  scrollbar-thumb-[#39ff14]  scrollbar-thin  scrollbar-track-white pb-[32px] ">
               <div className="flex-shrink-0">
                 <h2 className="text-[56px] text-white font-semibold leading-[56px] tracking-[-0.672px] pb-[16px]">
                   01
@@ -474,17 +496,21 @@ const Layout = () => {
                   BRAND COLLABORATIONS & ENDORSEMENT
                 </h2>
               </div>
-            </div>
+            </div> */}
 
-            <div className="md:grid grid-cols-3 gap-[20px] hidden ">
+            <div className="grid-cols-2 grid md:grid-cols-3 gap-[20px] ">
               <ScrollAnimation
                 animateIn="animate__fadeInLeft"
                 duration={1}
                 offset={200}
               >
-                <div className="  text-white  max-w-[435px] rounded-[16px]">
-                  <img src="/brand.png" alt="icon" className="mb-[24px]" />
-                  <h3 className="text-[22px] lg:text-[26px]  font-medium">
+                <div className="  text-white max-w-[170px] sm:max-w-[200px]  md:max-w-[435px] rounded-[16px]">
+                  <img
+                    src="/brand.png"
+                    alt="icon"
+                    className="mb-[24px] w-full"
+                  />
+                  <h3 className="text-[19px] md:text-[22px] lg:text-[26px]  font-medium">
                     BRANDING STRATEGY
                   </h3>
                 </div>
@@ -494,9 +520,9 @@ const Layout = () => {
                 duration={1}
                 offset={200}
               >
-                <div className="  text-white  max-w-[435px] rounded-[16px]">
+                <div className="  text-white max-w-[170px] sm:max-w-[200px]  md:max-w-[435px] rounded-[16px]">
                   <img src="/design.png" alt="icon" className="mb-[24px]" />
-                  <h3 className="text-[22px] lg:text-[26px]  font-medium">
+                  <h3 className="text-[19px] md:text-[22px] lg:text-[26px]  font-medium">
                     PRODUCT DESIGN
                   </h3>
                 </div>
@@ -507,9 +533,9 @@ const Layout = () => {
                 duration={1}
                 offset={200}
               >
-                <div className="  text-white  max-w-[435px] rounded-[16px]">
+                <div className="  text-white max-w-[170px] sm:max-w-[200px]  md:max-w-[435px] rounded-[16px]">
                   <img src="/networking.png" alt="icon" className="mb-[24px]" />
-                  <h3 className="text-[22px] lg:text-[26px]  font-medium">
+                  <h3 className="text-[19px] md:text-[22px] lg:text-[26px]  font-medium">
                     NETWORKING
                   </h3>
                 </div>
@@ -520,45 +546,43 @@ const Layout = () => {
                 duration={1}
                 offset={200}
               >
-                <div className="  text-white  max-w-[435px] rounded-[16px]">
+                <div className="  text-white max-w-[170px] sm:max-w-[200px]  md:max-w-[435px] rounded-[16px]">
                   <img src="/digital.png" alt="icon" className="mb-[24px]" />
-                  <h3 className="text-[22px] lg:text-[26px]  font-medium">
+                  <h3 className="text-[19px] md:text-[22px] lg:text-[26px]  font-medium">
                     DIGITAL MARKETING
                   </h3>
                 </div>
               </ScrollAnimation>
 
               <ScrollAnimation animateIn="animate__fadeInDown" duration={1}>
-                <div className="  text-white  max-w-[435px] rounded-[16px]">
+                <div className="  text-white max-w-[170px] sm:max-w-[200px]  md:max-w-[435px] rounded-[16px]">
                   <img src="/consult.png" alt="icon" className="mb-[24px]" />
-                  <h3 className="text-[22px] lg:text-[26px]  font-medium">
+                  <h3 className="text-[19px] md:text-[22px] lg:text-[26px]  font-medium">
                     BUSINESS CONSULTING
                   </h3>
                 </div>
               </ScrollAnimation>
 
               <ScrollAnimation animateIn="animate__fadeInLeft" duration={1}>
-                <div className="  text-white  max-w-[435px] rounded-[16px]">
+                <div className="  text-white max-w-[170px] sm:max-w-[200px]  md:max-w-[435px] rounded-[16px]">
                   <img src="/consult.png" alt="icon" className="mb-[24px]" />
-                  <h3 className="text-[22px] lg:text-[26px]  font-medium">
+                  <h3 className="text-[19px] md:text-[22px] lg:text-[26px]  font-medium">
                     BRAND COLLABORATIONS & ENDORSEMENT
                   </h3>
                 </div>
               </ScrollAnimation>
             </div>
             <button
-               onClick={() => {
+              onClick={() => {
                 setContactBox(!contactbox);
               }}
-              className="btn relative inline-flex items-center justify-start overflow-hidden transition-all px-3 py-2 z-20 rounded-[24px] border border-white bg-black text-white to-white via-black from-[#111111] hover:bg-white group"
+              className="btn mt-7 relative inline-flex items-center justify-start overflow-hidden transition-all px-3 py-2 z-20 rounded-[24px] border border-white bg-black text-white to-white via-black from-[#111111] hover:bg-white group"
             >
               <span className="w-0 h-0 rounded bg-white absolute top-0 left-0 ease-out duration-500 transition-all group-hover:w-full group-hover:h-full -z-1"></span>
               <span className="w-full flex items-center text-white transition-colors duration-600 ease-in-out group-hover:text-black z-10">
-              Ready to get in touch?{" "}
-              <BsArrowRight/>
+                Ready to get in touch? <BsArrowRight />
               </span>
             </button>
-           
           </section>
         </div>
       ) : (
@@ -569,7 +593,7 @@ const Layout = () => {
         <div>
           <section className="pt-[40px] md:pt-[70px] lg:pt-[104px] px-[16px] md:px-[36px] lg:px-[48px] bg-[#111]">
             <Magnetic>
-              <h2 className="text-[34px] md:text-[52px] lg:text-[72px] font-semibold leading-[40px] md:leading-[60px] lg:leading-[86px] my-[16px] text-white">
+              <h2 className="text-[28px] md:text-[32px] lg:text-[50px] font-semibold leading-[40px] md:leading-[60px] lg:leading-[86px] my-[16px] text-white">
                 ABOUT
               </h2>
             </Magnetic>
@@ -582,7 +606,7 @@ const Layout = () => {
             </ScrollAnimation>
 
             <ScrollAnimation animateIn="animate__fadeInUp" duration={1}>
-              <h3 className="text-[14px] md:text-[24px] lg:text-[28px] text-white w-full ">
+              <h3 className="text-[14px] md:text-[24px] lg:text-[28px] text-white w-full mb-[24px] md:mb-[60px] lg:mb-[90px] ">
                 By night, I channel my creativity as a Product/Industrial
                 Designer. I excel in connecting people over good food and
                 whisky, earning me the title of Super connector. I'm known as a
@@ -593,8 +617,8 @@ const Layout = () => {
               </h3>
             </ScrollAnimation>
 
-            <div>
-              <div>
+            <div className="flex flex-col-reverse md:flex-row gap-[40px] mb-[24px] md:mb-[60px] lg:mb-[90px] ">
+              <div className="w-full md:w-[40%] ">
                 <ScrollAnimation animateIn="animate__fadeInUp" duration={1}>
                   <p className="text-white text-[14px] md:text-[18px] lg:text-[20px] mb-[24px] md:mb-[48px] lg:mb-[64px]">
                     “When I'm not out and about, I enjoy being a homebody and
@@ -605,13 +629,17 @@ const Layout = () => {
                   </p>
                 </ScrollAnimation>
               </div>
-              <div>
-                <img src="" alt="" />
+              <div className="w-full md:w-[60%]">
+                <img
+                  src="/pics.png"
+                  alt="Samuel otigba at the beach"
+                  className="md:h-[500px] lg:h-[603px]"
+                />
               </div>
             </div>
 
             <div>
-              <p className="text-white text-[14px] md:text-[18px] lg:text-[20px] mb-[24px] md:mb-[48px] lg:mb-[64px]">
+              <p className="text-white text-[14px] font-light md:text-[18px] lg:text-[20px] mb-[24px] md:mb-[48px] lg:mb-[64px]">
                 LIFE OUTSIDE THE PRODUCT & GROWTH HACK
               </p>
               <ScrollAnimation animateIn="animate__fadeInUp" duration={1}>
@@ -631,18 +659,17 @@ const Layout = () => {
                 </p>
               </ScrollAnimation>
 
-              <ScrollAnimation animateIn="animate__fadeInUp" duration={1}>
-                <p className="text-white text-[14px] md:text-[18px] lg:text-[20px] mb-[24px] md:mb-[48px] lg:mb-[64px]">
-                  Oh, and I take beautiful pictures too. Check here! 😎 📸
-                </p>
-              </ScrollAnimation>
+              <p className="text-white text-[14px] md:text-[18px] lg:text-[20px] mb-[24px] md:mb-[48px] lg:mb-[64px]">
+                Oh, and I take beautiful pictures too.{" "}
+                <span className="underline">Check here!</span> 😎 📸
+              </p>
             </div>
 
             <div className="mb-[24px]">
               <Magnetic>
-                <button className="text-white border border-[#DBDBDB] rounded-[40px] px-[34px] py-[10px] lg:py-[16px] mb-[16px] text-[12px] md:text-base lg:text-[18px] ">
+                <h2 className="text-[28px] md:text-[32px] lg:text-[50px] font-semibold leading-[40px] md:leading-[60px] lg:leading-[86px] my-[16px] text-white">
                   JOURNEY
-                </button>
+                </h2>
               </Magnetic>
               <div>
                 <p className="text-[14px] md:text-[24px] lg:text-[28px] text-white w-full ">
@@ -658,7 +685,290 @@ const Layout = () => {
                 </p>
               </div>
             </div>
-            <JourneyAccordion
+            <div className="mt-[40px]">
+              <div>
+                <div className="flex flex-row justify-between">
+                  {" "}
+                  <div className="flex flex-col text-[#ffffff] ">
+                    <p className="text-[18px] md:text-[24px]">BEZI</p>{" "}
+                    <p className=" italic text-[18px] md:text-[24px] max-w-[70%]">
+                      Chief Growth Officer
+                    </p>{" "}
+                    <p className="md:text-[20px] text-[14px]">
+                      Jan ‘23 - Present
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div className="flex flex-row justify-between mt-[32px]">
+                  {" "}
+                  <div className="flex flex-col text-[#ffffff] ">
+                    <p className="text-[18px] md:text-[24px]">Meta</p>{" "}
+                    <p className=" italic text-[18px] md:text-[24px] max-w-[70%]">
+                      Product Marketing Manager (NPE){" "}
+                    </p>{" "}
+                    <p className="md:text-[20px] text-[14px]">
+                      June ‘22 - Sept '22{" "}
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div className="flex flex-row justify-between mt-[32px]">
+                  {" "}
+                  <div className="flex flex-col max-w-[65%] text-[#ffffff]">
+                    <p className="text-[18px] md:text-[24px]">
+                      Sabee, NPE Meta
+                    </p>{" "}
+                    <p className=" italic text-[18px] md:text-[24px] ">
+                      Product Marketing Manager (Contractual Worker)
+                    </p>{" "}
+                    <p className="text-[20px]">May ‘23 - Nov '22</p>
+                  </div>
+                  <div></div>{" "}
+                </div>
+              </div>
+              <div>
+                <div className="flex flex-row justify-between mt-[32px]">
+                  {" "}
+                  <div className="flex flex-col max-w-[70%] text-[#ffffff]">
+                    <p className="text-[18px] md:text-[24px]">AVANTEFLY</p>{" "}
+                    <p className=" italic text-[18px] md:text-[24px]">
+                      Chief Product Information Officer
+                    </p>{" "}
+                    <p className="text-[20px]">Since March 2021</p>
+                  </div>
+                  <div>
+                    <button
+                      onClick={() => {
+                        setMore3(!more3);
+                      }}
+                      className="btn relative inline-flex items-center justify-start overflow-hidden transition-all px-3 py-2 z-20 rounded-[24px] border border-white bg-black text-white to-white via-black from-[#111111] hover:bg-white group"
+                    >
+                      <span className="w-0 h-0 rounded bg-white absolute top-0 left-0 ease-out duration-500 transition-all group-hover:w-full group-hover:h-full -z-1"></span>
+                      <span className="w-full whitespace-nowrap text-white transition-colors duration-600 ease-in-out group-hover:text-black z-10">
+                        {more3 === true ? "VIEW LESS" : "MORE INFO"}
+                      </span>
+                    </button>
+                  </div>
+                </div>
+                {more3 === true ? (
+                  <m.div
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{
+                      type: "spring",
+                      stiffness: 260,
+                      damping: 20,
+                      duration: 1.3,
+                    }}
+                  >
+                    <div className="flex flex-col text-[#BABABA] justify-between md:flex-row pt-5">
+                      <p>
+                        In March 2019, I got an offer!
+                        <br />
+                        All I kept saying was “I am in!”
+                        <br />
+                        AvanteFly is a Private charter and luxury lifestyle
+                        management Startup Company. Quite an interesting one you
+                        know…
+                        <br />
+                        I get to oversee the day-to-day administrative and
+                        operational functions at AvanteFly. This basically
+                        involves a lot of Strategy Implementation, Policy
+                        Establishments, Relationship Managements , Performance
+                        Analyzation, Expansion Evaluation and Team Building.
+                        <br />
+                        <br />
+                        I’ve got my sleeves rolled up for this one!
+                      </p>
+                    </div>
+                  </m.div>
+                ) : (
+                  ""
+                )}{" "}
+              </div>
+              <div>
+                <div className="flex flex-row justify-between mt-[32px]">
+                  {" "}
+                  <div className="flex flex-col max-w-[65%] text-[#ffffff]">
+                    <p className="text-[18px] md:text-[24px]">Smart Edge</p>{" "}
+                    <p className=" italic text-[18px] md:text-[24px]">
+                      Senior Partner (Client Development)/Business Consultant)
+                    </p>{" "}
+                    <p className="text-[20px]">Oct '19 - Jan '21</p>
+                  </div>
+                  <div>
+                    <button
+                      onClick={() => {
+                        setMore4(!more4);
+                      }}
+                      className="btn relative inline-flex items-center justify-start overflow-hidden transition-all px-3 py-2 z-20 rounded-[24px] border border-white bg-black text-white to-white via-black from-[#111111] hover:bg-white group"
+                    >
+                      <span className="w-0 h-0 rounded bg-white absolute top-0 left-0 ease-out duration-500 transition-all group-hover:w-full group-hover:h-full -z-1"></span>
+                      <span className="w-full text-white transition-colors duration-600 ease-in-out group-hover:text-black z-10">
+                        {more4 === true ? "VIEW LESS" : "MORE INFO"}
+                      </span>
+                    </button>
+                  </div>{" "}
+                </div>
+                {more4 === true ? (
+                  <m.div
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{
+                      type: "spring",
+                      stiffness: 260,
+                      damping: 20,
+                      duration: 1.3,
+                    }}
+                  >
+                    <div className="flex flex-col text-[#BABABA] justify-between md:flex-row pt-5">
+                      <p>
+                        Building and managing corporate relationships has always
+                        been my thing so this role was a perfect fit for me .
+                        SmartEdge has the smartest digital team with delivering
+                        results which made my job of structuring and driving
+                        Client initiative strategies easier. I was able to
+                        exceed 150% of the planned revenue quota of the company
+                        portfolio.
+                        <br />
+                        <br />I still have a soft spot for SmartEdge and I
+                        remain a Consultant for them on a request basis.
+                      </p>
+                    </div>
+                  </m.div>
+                ) : (
+                  ""
+                )}
+              </div>
+              <div>
+                <div className="flex flex-row justify-between mt-[32px]">
+                  {" "}
+                  <div className="flex flex-col max-w-[65%] text-[#ffffff]">
+                    <p className="text-[18px] md:text-[24px]">CAX Africa</p>{" "}
+                    <p className=" italic text-[18px] md:text-[24px]">
+                      Head Digital Communications/Digital Marketing Consultant
+                    </p>{" "}
+                    <p className="text-[20px]">Nov '19 - Jan '20</p>
+                  </div>
+                  <div>
+                    <button
+                      onClick={() => {
+                        setMore5(!more5);
+                      }}
+                      className="btn relative inline-flex items-center justify-start overflow-hidden transition-all px-3 py-2 z-20 rounded-[24px] border border-white bg-black text-white to-white via-black from-[#111111] hover:bg-white group"
+                    >
+                      <span className="w-0 h-0 rounded bg-white absolute top-0 left-0 ease-out duration-500 transition-all group-hover:w-full group-hover:h-full -z-1"></span>
+                      <span className="w-full text-white transition-colors duration-600 ease-in-out group-hover:text-black z-10">
+                        {more5 === true ? "VIEW LESS" : "MORE INFO"}
+                      </span>
+                    </button>
+                  </div>{" "}
+                </div>
+                {more5 === true ? (
+                  <m.div
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{
+                      type: "spring",
+                      stiffness: 260,
+                      damping: 20,
+                      duration: 1.3,
+                    }}
+                  >
+                    <div className="flex flex-col text-[#BABABA] justify-between md:flex-row pt-5">
+                      <p>
+                        I worked as a consultant on the Creative African
+                        Exchange Programme for 3 months. The buildup to the main
+                        event that happened in Kigali Rwanda was an interesting
+                        one. Oh and Rwanda is extremely beautiful!
+                        <br />I worked closely with the in house marketing team
+                        to develop the branding strategy, Led a 15-person team
+                        to deliver digital marketing services and the delivery
+                        yielded a result of 182% achievement rate! Awesome isn't
+                        it?
+                      </p>
+                    </div>
+                  </m.div>
+                ) : (
+                  ""
+                )}
+              </div>{" "}
+              <div>
+                <div className="flex flex-row justify-between mt-[32px]">
+                  {" "}
+                  <div className="flex flex-col max-w-[65%] text-[#ffffff]">
+                    <p className="text-[18px] md:text-[24px]">
+                      UNITED NATIONS NGO: YOUTH CHARTER
+                    </p>{" "}
+                    <p className=" italic text-[18px] md:text-[24px]">
+                      Digital Advisory Board Member
+                    </p>{" "}
+                    <p className="text-[20px]">Oct '17 - Sep '19</p>
+                  </div>
+                  <div>
+                    <button
+                      onClick={() => {
+                        setMore6(!more6);
+                      }}
+                      className="btn relative inline-flex items-center justify-start overflow-hidden transition-all px-3 py-2 z-20 rounded-[24px] border border-white bg-black text-white to-white via-black from-[#111111] hover:bg-white group"
+                    >
+                      <span className="w-0 h-0 rounded bg-white absolute top-0 left-0 ease-out duration-500 transition-all group-hover:w-full group-hover:h-full -z-1"></span>
+                      <span className="w-full text-white transition-colors duration-600 ease-in-out group-hover:text-black z-10">
+                        {more6 === true ? "VIEW LESS" : "MORE INFO"}
+                      </span>
+                    </button>
+                  </div>{" "}
+                </div>
+                {more6 === true ? (
+                  <m.div
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{
+                      type: "spring",
+                      stiffness: 260,
+                      damping: 20,
+                      duration: 1.3,
+                    }}
+                  >
+                    <div className="flex flex-col text-[#BABABA] justify-between md:flex-row pt-5">
+                      <p>
+                        In the earlier days of my journey here, I led the
+                        strategic planning process for the UI/UX design and how
+                        people interact with content. Coordinated the
+                        development and execution of communication materials
+                        such as blog, websites and social media marketing.{" "}
+                        <br />
+                        Also tapped into my business side and got involved in
+                        the development, deployment of the company’s long and
+                        short term business model that identifies new business
+                        opportunities, markets and partners.
+                        <br />
+                        Interesting Fact: I did over 300 designs for the UN NGO
+                        Youth Charter. I’ve got some here
+                        <br />
+                        <br />
+                        Still a sitting advisory board member !
+                      </p>
+                    </div>
+                  </m.div>
+                ) : (
+                  ""
+                )}
+              </div>
+              <a href="/Samuel Otigba CV.pdf" download="Samuel Otigba CV">
+                <button className="btn  mt-9 relative inline-flex items-center justify-start overflow-hidden transition-all px-3 py-2 z-20 rounded-[24px] border border-white bg-black text-white to-white via-black from-[#111111] hover:bg-white group">
+                  <span className="w-0 h-0 rounded bg-white absolute top-0 left-0 ease-out duration-500 transition-all group-hover:w-full group-hover:h-full -z-1"></span>
+                  <span className="w-full text-white transition-colors duration-600 ease-in-out group-hover:text-black z-10">
+                    My resume has got more..
+                  </span>
+                </button>
+              </a>
+            </div>
+
+            {/* <JourneyAccordion
               company={"Bezi"}
               position={"Chief Growth Officer"}
               date={""}
@@ -728,11 +1038,11 @@ const Layout = () => {
               position={"Digital Innovation Lead - Hemitna Project"}
               date={"2015"}
               more={"true"}
-            />
+            /> */}
 
-            <button className="underline text-white">
+            {/* <button className="underline text-white">
               My resume has got more..
-            </button>
+            </button> */}
           </section>
           <section className="pt-[40px] md:pt-[70px] lg:pt-[104px] px-[16px] md:px-[36px] lg:px-[48px] bg-[#111]">
             <Magnetic>
@@ -759,13 +1069,25 @@ const Layout = () => {
                   <li>DRAGONS DEN </li>
                 </ScrollAnimation>
 
-                <ScrollAnimation animateIn="animate__fadeInUp" duration={1}>
+                <ScrollAnimation
+                  animateIn="animate__fadeInUp"
+                  duration={1}
+                  offset={100}
+                >
                   <li>YNAIJA</li>
                 </ScrollAnimation>
-                <ScrollAnimation animateIn="animate__fadeInUp" duration={1}>
+                <ScrollAnimation
+                  animateIn="animate__fadeInUp"
+                  duration={1}
+                  offset={100}
+                >
                   <li>UNI OF SALFORD </li>
                 </ScrollAnimation>
-                <ScrollAnimation animateIn="animate__fadeInUp" duration={1}>
+                <ScrollAnimation
+                  animateIn="animate__fadeInUp"
+                  duration={1}
+                  offset={70}
+                >
                   <li>GLOBAL YOUTH FORUM UAE</li>
                 </ScrollAnimation>
               </ul>
@@ -780,7 +1102,7 @@ const Layout = () => {
         className="pt-[40px] md:pt-[70px] lg:pt-[104px] px-[16px] md:px-[36px] lg:px-[48px] bg-[#111]"
       >
         <div className="flex justify-between text-center">
-          <div className="text-white">
+          <div className="text-white text-[12px]">
             © {new Date().getFullYear()} All Rights Reserved
           </div>
           <div className="hidden lg:block">
@@ -790,10 +1112,18 @@ const Layout = () => {
               <li>PRESS</li>
             </ul>
           </div>
-          <div className="flex items-center ">
-            <img src="/twitter.png" alt="twitter" />
-            <img src="/instagram.png" alt="instagram" />
-            <img src="/linkedin.png" alt="linkedin" />
+          <div className="flex items-center gap-2 md:gap-4 ">
+            <img src="/twitter.png" alt="twitter" className="h-[18px] md:h-6" />
+            <img
+              src="/instagram.png"
+              alt="instagram"
+              className="h-[18px] md:h-6"
+            />
+            <img
+              src="/linkedin.png"
+              alt="linkedin"
+              className="h-[18px] md:h-6"
+            />
           </div>
         </div>
       </section>

@@ -7,16 +7,7 @@ const Branding = () => {
   const [expand2, setExpand2] = useState(false);
   const [expand3, setExpand3] = useState(false);
   const [expand4, setExpand4] = useState(false);
-  const [expand5, setExpand5] = useState(false);
-  const [expand6, setExpand6] = useState(false);
-  const [expand7, setExpand7] = useState(false);
-  const [gallery, setGallery] = useState(false);
-  const [more1, setMore1] = useState(false);
-  const [more2, setMore2] = useState(false);
-  const [more3, setMore3] = useState(false);
-  const [more4, setMore4] = useState(false);
-  const [more5, setMore5] = useState(false);
-  const [more6, setMore6] = useState(false);
+
   return (
     <div>
       <div className="pb-[24px] md:pb-[48px] lg:pb-[64px]  lg:pt-[24px] border-b-white">

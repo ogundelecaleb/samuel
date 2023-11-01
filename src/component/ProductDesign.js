@@ -7,17 +7,7 @@ const ProductDesign = () => {
   const [expand1, setExpand1] = useState(false);
   const [expand2, setExpand2] = useState(false);
   const [expand3, setExpand3] = useState(false);
-  const [expand4, setExpand4] = useState(false);
-  const [expand5, setExpand5] = useState(false);
-  const [expand6, setExpand6] = useState(false);
-  const [expand7, setExpand7] = useState(false);
-  const [gallery, setGallery] = useState(false);
-  const [more1, setMore1] = useState(false);
-  const [more2, setMore2] = useState(false);
-  const [more3, setMore3] = useState(false);
-  const [more4, setMore4] = useState(false);
-  const [more5, setMore5] = useState(false);
-  const [more6, setMore6] = useState(false);
+
   return (
     <div>
       <div className="pb-[24px] md:pb-[48px] lg:pb-[64px]  lg:pt-[24px] border-b-white">
@@ -133,13 +123,13 @@ const ProductDesign = () => {
         <div className="flex justify-between items-center w-full">
           <button
             onClick={() => {
-              setExpand1(!expand1);
+              setExpand2(!expand2);
             }}
             className="btn relative inline-flex items-center justify-start overflow-hidden transition-all px-3 py-2 z-20 rounded-[24px] border border-white bg-black text-white to-white via-black from-[#111111] hover:bg-white max-w-[100px] md:max-w-[120px] group"
           >
             <span className="w-0 h-0 rounded bg-white absolute top-0 left-0 ease-out duration-500 transition-all group-hover:w-full group-hover:h-full -z-1"></span>
             <span className="w-full text-white transition-colors duration-600 ease-in-out group-hover:text-black z-10">
-              {expand1 === true ? "Collapse" : "Expand"}
+              {expand2 === true ? "Collapse" : "Expand"}
             </span>
           </button>
           <div className="text-[#BABABA] text-24px block lg:hidden ">

@@ -19,10 +19,7 @@ import emailjs from "@emailjs/browser";
 import Dnd from "./component/Dnd";
 
 const Layout = () => {
-  const [expand1, setExpand1] = useState(false);
-  const [gallery, setGallery] = useState(false);
-  const [more1, setMore1] = useState(false);
-  const [more2, setMore2] = useState(false);
+ 
   const [more3, setMore3] = useState(false);
   const [more4, setMore4] = useState(false);
   const [more5, setMore5] = useState(false);

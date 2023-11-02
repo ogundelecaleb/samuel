@@ -292,7 +292,7 @@ const Layout = () => {
               <div className=" hidden md:grid grid-cols-5 gap-[40px] ">
               <div className="group relative flex cursor-pointer ">
                   <img
-                    src="/armani.png"
+                    src="/amarni.png"
                     alt=""
                     className="rounded-full border border-gray-500 object-cover md:h-[120px] md:w-[120px] lg:h-[180px] lg:w-[180px] xl:h-[218px] xl:w-[218px] filter group-hover:grayscale transition duration-300 ease-in-out"
                   />
@@ -375,7 +375,7 @@ const Layout = () => {
               <div className=" hidden md:grid grid-cols-5 gap-[40px] mt-[40px] ">
                <div className="group relative flex cursor-pointer ">
                   <img
-                    src="/marvin.jpeg"
+                    src="/marvin.png"
                     alt=""
                     className="rounded-full border border-gray-500 object-cover md:h-[120px] md:w-[120px] lg:h-[180px] lg:w-[180px] xl:h-[218px] xl:w-[218px] filter group-hover:grayscale transition duration-300 ease-in-out"
                   />
@@ -442,7 +442,7 @@ const Layout = () => {
                   />
                   <div className="absolute opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-white md:h-[120px] md:w-[120px] lg:h-[180px] lg:w-[180px] xl:h-[218px] xl:w-[218px] rounded-full">
                     <div className="flex items-center  justify-center h-full">
-                      <p className=" md:text-[24px] xl:text-3xl font-bold text-black opacity-100">
+                      <p className="text-center md:text-[24px] xl:text-3xl font-bold text-black opacity-100">
                       FreshPrep by Eros
 
                       </p>
@@ -471,7 +471,7 @@ const Layout = () => {
                   />
                   <div className="absolute opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-white md:h-[120px] md:w-[120px] lg:h-[180px] lg:w-[180px] xl:h-[218px] xl:w-[218px] rounded-full">
                     <div className="flex items-center  justify-center h-full">
-                      <p className=" md:text-[24px] xl:text-3xl font-bold text-black opacity-100">
+                      <p className=" md:text-[24px] xl:text-3xl font-bold text-black opacity-100 text-center">
                         Newton & David
                       </p>
                     </div>
@@ -493,7 +493,7 @@ const Layout = () => {
                 </div>
                 <div className="group relative flex cursor-pointer ">
                   <img
-                    src="/goldenpenny.jpeg"
+                    src="/goldenpenny.png"
                     alt=""
                     className="rounded-full border border-gray-500 object-cover md:h-[120px] md:w-[120px] lg:h-[180px] lg:w-[180px] xl:h-[218px] xl:w-[218px] filter group-hover:grayscale transition duration-300 ease-in-out"
                   />

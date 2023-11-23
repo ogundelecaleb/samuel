@@ -837,7 +837,7 @@ const Layout = () => {
                 </div>
               </div>
               <div>
-                <div className="flex flex-row justify-between">
+                <div className="flex flex-row justify-between mt-[32px]">
                   {" "}
                   <div className="flex flex-col text-[#ffffff] ">
                     <p className="text-[18px] md:text-[24px]">BEZI</p>{" "}

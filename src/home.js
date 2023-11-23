@@ -148,8 +148,8 @@ const Home = () => {
             <p className="text-white md:text-[24px]  ">
               Hi! 👋 <br />I am Samuel Otigba, a daily Product Growth and
               Marketing Specialist and also a Product/ Industrial designer every
-              other night. I am a visionary(Sam calls me that LOL) who currently
-              lives in Lagos, Nigeria.
+              other night. I currently
+              live in Lagos, Nigeria.
             </p>
           </div>
 

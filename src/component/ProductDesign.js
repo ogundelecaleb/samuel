@@ -137,7 +137,7 @@ const ProductDesign = () => {
             <p className="whitespace-nowrap">AFA SPORTS</p>
           </div>
         </div>
-        {expand1 === true ? (
+        {expand2 === true ? (
           <m.div
             initial={{ scale: 0 }}
             animate={{ scale: 1 }}

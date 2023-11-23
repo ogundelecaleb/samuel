@@ -167,8 +167,7 @@ const Layout = () => {
               <p className="text-white md:text-[24px] text-left cursor-pointer ">
                 Hi! 👋 <br />I am Samuel Otigba, a daily Product Growth and
                 Marketing Specialist and also a Product/ Industrial designer
-                every other night. I am a visionary(Sam calls me that LOL) who
-                currently lives in Lagos, Nigeria.
+                every other night. I currently live in Lagos, Nigeria.
               </p>
             </Magnetic>
           </div>
@@ -248,7 +247,7 @@ const Layout = () => {
                         : "text-white border border-[#ffff]"
                     } rounded-[40px] `}
                   >
-                    Brand Collections
+                    Brand Collaborations
                   </button>
                 </Magnetic>
               </li>
@@ -336,7 +335,7 @@ const Layout = () => {
                 </div>
                 <div className="group relative flex cursor-pointer ">
                   <img
-                    src="/ndanitv.png"
+                    src="/ndanie.png"
                     alt=""
                     className="rounded-full border border-gray-500 object-cover md:h-[120px] md:w-[120px] lg:h-[180px] lg:w-[180px] xl:h-[218px] xl:w-[218px] filter group-hover:grayscale transition duration-300 ease-in-out"
                   />
@@ -653,7 +652,7 @@ const Layout = () => {
                     className="mb-[24px] w-full rounded-xl"
                   />
                   <h3 className="text-[19px] md:text-[22px] lg:text-[26px]  font-medium">
-                    BRANDING STRATEGY
+                    BRANDING STRATEGY DEVELOPMENT
                   </h3>
                 </div>
               </ScrollAnimation>
@@ -680,7 +679,7 @@ const Layout = () => {
                   <img src="/networking.jpg" alt="icon"                     className="mb-[24px] w-full rounded-xl"
 />
                   <h3 className="text-[19px] md:text-[22px] lg:text-[26px]  font-medium">
-                    NETWORKING
+                    NETWORK FACILITATION &  CONNECTIVITY
                   </h3>
                 </div>
               </ScrollAnimation>
@@ -704,7 +703,7 @@ const Layout = () => {
                   <img src="/consult.jpg" alt="icon"                     className="mb-[24px] w-full rounded-xl"
  />
                   <h3 className="text-[19px] md:text-[22px] lg:text-[26px]  font-medium">
-                    BUSINESS CONSULTING
+                   PRODUCT INNOVATION CONSULTANCY SERVICE
                   </h3>
                 </div>
               </ScrollAnimation>
@@ -823,13 +822,27 @@ const Layout = () => {
               </div>
             </div>
             <div className="mt-[40px]">
+            <div>
+                <div className="flex flex-row justify-between">
+                  {" "}
+                  <div className="flex flex-col text-[#ffffff] ">
+                    <p className="text-[18px] md:text-[24px]">Vendy</p>{" "}
+                    <p className=" italic text-[18px] md:text-[24px] max-w-[70%]">
+                      Head of Brands and Communication 
+                    </p>{" "}
+                    <p className="md:text-[20px] text-[14px]">
+                      Aug ‘23 - Present
+                    </p>
+                  </div>
+                </div>
+              </div>
               <div>
                 <div className="flex flex-row justify-between">
                   {" "}
                   <div className="flex flex-col text-[#ffffff] ">
                     <p className="text-[18px] md:text-[24px]">BEZI</p>{" "}
                     <p className=" italic text-[18px] md:text-[24px] max-w-[70%]">
-                      Chief Growth Officer
+                      Growth Strategy Consultant
                     </p>{" "}
                     <p className="md:text-[20px] text-[14px]">
                       Jan ‘23 - Present
@@ -837,31 +850,20 @@ const Layout = () => {
                   </div>
                 </div>
               </div>
-              <div>
-                <div className="flex flex-row justify-between mt-[32px]">
-                  {" "}
-                  <div className="flex flex-col text-[#ffffff] ">
-                    <p className="text-[18px] md:text-[24px]">Meta</p>{" "}
-                    <p className=" italic text-[18px] md:text-[24px] max-w-[70%]">
-                      Product Marketing Manager (NPE){" "}
-                    </p>{" "}
-                    <p className="md:text-[20px] text-[14px]">
-                      June ‘22 - Sept '22{" "}
-                    </p>
-                  </div>
-                </div>
-              </div>
+              
               <div>
                 <div className="flex flex-row justify-between mt-[32px]">
                   {" "}
                   <div className="flex flex-col max-w-[65%] text-[#ffffff]">
+                  <p className="text-[18px] md:text-[24px]">BEZI</p>{" "}
+
                     <p className="text-[18px] md:text-[24px]">
-                      Sabee, NPE Meta
+                      Sabee, NPE
                     </p>{" "}
                     <p className=" italic text-[18px] md:text-[24px] ">
-                      Product Marketing Manager (Contractual Worker)
+                      Product Marketing Manager (Contractual)
                     </p>{" "}
-                    <p className="text-[20px]">May ‘23 - Nov '22</p>
+                    <p className="text-[20px]">May ‘22 - Nov '22</p>
                   </div>
                   <div></div>{" "}
                 </div>

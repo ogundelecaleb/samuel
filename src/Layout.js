@@ -855,17 +855,11 @@ const Layout = () => {
                 <div className="flex flex-row justify-between mt-[32px]">
                   {" "}
                   <div className="flex flex-col max-w-[65%] text-[#ffffff]">
-                  <p className="text-[18px] md:text-[24px]">BEZI</p>{" "}
-
-                    <p className="text-[18px] md:text-[24px]">
-                      Sabee, NPE
-                    </p>{" "}
-                    <p className=" italic text-[18px] md:text-[24px] ">
-                      Product Marketing Manager (Contractual)
-                    </p>{" "}
-                    <p className="text-[20px]">May ‘22 - Nov '22</p>
+                  <p className="text-[18px] md:text-[24px]">META</p>
+                  <p className="text-[18px] md:text-[24px]">Sabee, NPE</p>{" "}
+                  <p className=" italic text-[18px] md:text-[24px] ">Product Marketing Manager (Contractual)</p>{" "}
+                  <p className="text-[20px]">May ‘22 - Nov '22</p>
                   </div>
-                  <div></div>{" "}
                 </div>
               </div>
               <div>

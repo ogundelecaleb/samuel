@@ -17,6 +17,7 @@ import { gsap, Power3 } from "gsap";
 import { RevolveButton } from "./common/RevolveButton";
 import emailjs from "@emailjs/browser";
 import Dnd from "./component/Dnd";
+import { WindupChildren } from "windups";
 
 const Layout = () => {
  
@@ -165,9 +166,8 @@ const Layout = () => {
           <div className={styles.body}>
             <Magnetic>
               <p className="text-white md:text-[24px] text-left cursor-pointer ">
-                Hi! 👋 <br />I am Samuel Otigba, a daily Product Growth and
-                Marketing Specialist and also a Product/ Industrial designer
-                every other night. I currently live in Lagos, Nigeria.
+              <WindupChildren>
+               {"Hi! 👋"}  <br /> {" I am Samuel Otigba, a daily Product Growth and Marketing Specialist and also a Product/ Industrial designer every other night. I currently live in Lagos, Nigeria."} </WindupChildren>
               </p>
             </Magnetic>
           </div>
@@ -743,13 +743,7 @@ const Layout = () => {
 
             <ScrollAnimation animateIn="animate__fadeInUp" duration={1}>
               <h3 className="text-[14px] md:text-[24px] lg:text-[28px] text-white w-full mb-[24px] md:mb-[60px] lg:mb-[90px] ">
-                By night, I channel my creativity as a Product/Industrial
-                Designer. I excel in connecting people over good food and
-                whisky, earning me the title of Super connector. I'm known as a
-                visionary, a nickname given by my good friend Sam. Originally
-                from Manchester, UK, I now reside in Lagos, Nigeria. I have an
-                appreciation for all things beautiful and possess a
-                sophisticated taste.
+              <WindupChildren>{"By night, I channel my creativity as a Product/Industrial Designer. I excel in connecting people over good food and whisky, earning me the title of Super connector. I'm known as a visionary, a nickname given by my good friend Sam. Originally from Manchester, UK, I now reside in Lagos, Nigeria. I have an appreciation for all things beautiful and possess a sophisticated taste."}</WindupChildren> 
               </h3>
             </ScrollAnimation>
 
